@@ -2,7 +2,7 @@
 ## that can cache its inverse. It inputs a matrix as its argument and creates
 ## a list of the following four nested functions which are subsettable: 
 ## 1. set function: To Acquire a matrix and make it globally available across 
-##    functions 
+##    functions.  
 ## 2. get function: To return the matrix 
 ## 3. setinverse function: To save the inverse of the matrix in cache.
 ## 4. getinverse function: To return the inverse of the matrix which is stored
@@ -21,6 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
                 # y should be a matrix 
                 x <<- y
                 # Global Assignment of NULL value to variable m
+                # Initialize the matrix
                 m <<- NULL
         }
         
